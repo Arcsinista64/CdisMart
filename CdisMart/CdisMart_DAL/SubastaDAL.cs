@@ -32,17 +32,45 @@ namespace CdisMart_DAL
                            };
             return subastas.AsEnumerable<object>().ToList();
         }
+        public Auction cargarSubastas(int IdSubasta)
+        {
+            var subasta = (from mSubasta in modelo.Auction
+                            where mSubasta.AuctionId == IdSubasta
+                            select mSubasta).FirstOrDefault();
 
-        //public List<object> obtenerUsuarios()
+            return subasta;
+        }
+
+        
+
+        
+
+
+
+        //public DataTable cargarSubasta(int IdSubasta)
         //{
-        //    var usuarios = from mUsuarios in modelo.Users
-        //                   select new
-        //                   {
-        //                       UserId = mUsuarios.UserId
+        //    SqlConnection connection = new SqlConnection();
+        //    connection.ConnectionString = @"Server=DESKTOP-Q82E1Q9\SQLEXPRESS;Database=CdisMart;Trusted_connection=true;";
 
-        //                   };
-        //    return usuarios.AsEnumerable<object>().ToList();
-        //}
+        //    SqlCommand command = new SqlCommand();
+        //    command.CommandType = CommandType.StoredProcedure;
+        //    command.CommandText = "sp_cargarSubastaporID";
+        //    command.Connection = connection;
+
+        //    command.Parameters.AddWithValue("pIdSubasta", IdSubasta);
+
+        //    SqlDataAdapter adapter = new SqlDataAdapter();
+        //    DataTable dtFacultades = new DataTable();
+
+        //    connection.Open();
+
+        //    adapter.SelectCommand = command;
+        //    adapter.Fill(dtFacultades);
+
+        //    connection.Close();
+
+        //    return dtFacultades;
+
         //public DataTable cargarSubastas()
         //{
         //    SqlConnection connection = new SqlConnection();

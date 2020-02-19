@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using CdisMart_BLL;
 using System.Data;
 using System.Data.SqlClient;
+using CdisMart_DAL;
 
 namespace CdisMart.Vistas
 {
@@ -54,17 +55,19 @@ namespace CdisMart.Vistas
 
         public void cargarSubasta(int IdSubasta)
         {
-            UserBLL usuario = new UserBLL();
-            DataTable dtSubasta = new DataTable();
+            SubastaBLL usuario = new SubastaBLL();
+            Auction subasta = new Auction();
+            List<Auction> subastas = new List<Auction>();
 
-            //dtSubasta = usuario.cargarSubasta(IdSubasta);
 
-            lblDescripcion.Text = dtSubasta.Rows[0]["Description"].ToString();
-            lblNombreProducto.Text = dtSubasta.Rows[0]["ProductName"].ToString();
+            //subastas = usuario.cargarSubastas(IdSubasta);
 
-            txtUsuario.Text = dtSubasta.Rows[0]["NombreUsuarioSubasta"].ToString();
-            txtFechaRealizaciondeOferta.Text = dtSubasta.Rows[0]["StartDate"].ToString().Substring(0, 16);
-            txtMontoOferta.Text = dtSubasta.Rows[0]["HighestBid"].ToString();
+            //lblDescripcion.Text = subasta.Description.ToString();
+            //lblNombreProducto.Text = subasta.ProductName.ToString();
+
+            //txtUsuario.Text = dtSubasta.Rows[0]["NombreUsuarioSubasta"].ToString();
+            //txtFechaRealizaciondeOferta.Text = dtSubasta.Rows[0]["StartDate"].ToString().Substring(0, 16);
+            //txtMontoOferta.Text = dtSubasta.Rows[0]["HighestBid"].ToString();
 
         }
 

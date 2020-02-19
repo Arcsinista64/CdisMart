@@ -16,6 +16,11 @@
     </div>
 
     <hr />
+
+
+    <asp:BulletedList ID="BulletedList1" runat="server"></asp:BulletedList>
+
+
     <table>
         <tr>
             <td>Usuario que realizó la oferta: </td>

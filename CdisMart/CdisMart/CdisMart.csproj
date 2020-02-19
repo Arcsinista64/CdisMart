@@ -294,6 +294,10 @@
       <Project>{61db28ac-ffe8-4234-b3e9-a8e1c3bebc57}</Project>
       <Name>CdisMart_BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CdisMart_DAL\CdisMart_DAL.csproj">
+      <Project>{5b2c8e44-05dc-45d8-abd7-2be7b3a873fc}</Project>
+      <Name>CdisMart_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

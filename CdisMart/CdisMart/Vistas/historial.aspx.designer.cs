@@ -7,13 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CdisMart.Vistas
-{
-
-
-    public partial class historial
-    {
-
+namespace CdisMart.Vistas {
+    
+    
+    public partial class historial {
+        
         /// <summary>
         /// Control lblUsuarioActivo.
         /// </summary>
@@ -22,7 +20,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUsuarioActivo;
-
+        
         /// <summary>
         /// Control lblNombreProducto.
         /// </summary>
@@ -31,7 +29,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNombreProducto;
-
+        
         /// <summary>
         /// Control lblDescripcion.
         /// </summary>
@@ -40,7 +38,16 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDescripcion;
-
+        
+        /// <summary>
+        /// Control BulletedList1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.BulletedList BulletedList1;
+        
         /// <summary>
         /// Control txtUsuario.
         /// </summary>
@@ -49,7 +56,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUsuario;
-
+        
         /// <summary>
         /// Control txtMontoOferta.
         /// </summary>
@@ -58,7 +65,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMontoOferta;
-
+        
         /// <summary>
         /// Control txtFechaRealizaciondeOferta.
         /// </summary>

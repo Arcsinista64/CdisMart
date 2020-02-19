@@ -129,29 +129,7 @@ namespace CdisMart_DAL
             connection.Close();
 
         }
-        public DataTable cargarSubasta(int IdSubasta)
-        {
-            SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = @"Server=DESKTOP-Q82E1Q9\SQLEXPRESS;Database=CdisMart;Trusted_connection=true;";
-
-            SqlCommand command = new SqlCommand();
-            command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "sp_cargarSubastaporID";
-            command.Connection = connection;
-
-            command.Parameters.AddWithValue("pIdSubasta", IdSubasta);
-
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable dtFacultades = new DataTable();
-
-            connection.Open();
-
-            adapter.SelectCommand = command;
-            adapter.Fill(dtFacultades);
-
-            connection.Close();
-
-            return dtFacultades;
-        }
+       
+        
     }
 }
