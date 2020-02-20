@@ -28,6 +28,8 @@
             <asp:BoundField HeaderText = "Usuario de tal" DataField = "Winner"/>
             <asp:BoundField HeaderText = "Usuario de tal" DataField = "NombreUsuarioSubasta"/>--%>
 
+
+
             
 
             <asp:TemplateField>
